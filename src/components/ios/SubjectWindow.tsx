@@ -30,7 +30,7 @@ export function SubjectWindow({ subject, onClose }: { subject: Subject; onClose:
       style={{ borderRadius: 40 }}
       transition={{ type: "spring", stiffness: 260, damping: 30 }}
     >
-      <div className="relative z-10 flex flex-col overflow-y-auto px-6 pb-40 pt-6">
+      <div className="relative z-10 flex flex-col overflow-y-auto px-6 pb-48 pt-6">
         <div className="mb-5 flex items-start justify-between gap-4">
           <motion.div layout="position">
             <p
@@ -117,7 +117,7 @@ export function SubjectWindow({ subject, onClose }: { subject: Subject; onClose:
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 px-5 pb-6 pt-14"
         style={{
           background:
-            "linear-gradient(to top, var(--color-background) 42%, color-mix(in oklab, var(--color-background) 60%, transparent) 72%, transparent)",
+            "linear-gradient(to top, var(--color-background) 60%, color-mix(in oklab, var(--color-background) 75%, transparent) 85%, transparent)",
         }}>
         <div className="pointer-events-auto grid grid-cols-2 gap-3">
           <GlassAction
