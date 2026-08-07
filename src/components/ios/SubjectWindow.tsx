@@ -26,7 +26,7 @@ export function SubjectWindow({ subject, onClose }: { subject: Subject; onClose:
   return (
     <motion.div
       layoutId={`card-${subject.id}`}
-      className="glass-strong glass-sheen squircle relative flex max-h-[88vh] w-full flex-col overflow-hidden"
+      className="glass-window glass-sheen squircle relative flex max-h-[80vh] w-full flex-col overflow-hidden"
       style={{ borderRadius: 40 }}
       transition={{ type: "spring", stiffness: 260, damping: 30 }}
     >

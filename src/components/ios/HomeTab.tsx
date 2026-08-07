@@ -95,13 +95,13 @@ export function HomeTab() {
 
       <AnimatePresence>
         {open && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-3">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-3 pb-24">
             <motion.div
               initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
               animate={{ opacity: 1, backdropFilter: "blur(22px)" }}
               exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
               transition={{ duration: 0.35 }}
-              className="absolute inset-0 bg-background/40"
+              className="absolute inset-0 bg-background/55"
               onClick={() => setOpen(null)}
             />
             <div className="relative w-full max-w-md">

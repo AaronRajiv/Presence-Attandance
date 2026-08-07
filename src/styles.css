@@ -222,6 +222,13 @@
   }
 }
 
+@utility glass-window {
+  background: color-mix(in oklab, var(--color-background) 78%, transparent);
+  backdrop-filter: blur(60px) saturate(200%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-float);
+}
+
 @utility squircle {
   border-radius: 30px;
   border-start-start-radius: 30px;
