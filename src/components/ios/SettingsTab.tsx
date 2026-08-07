@@ -224,7 +224,7 @@ function ActionRow({
       whileTap={{ scale: 0.985, opacity: 0.7 }}
       onClick={onPress}
       className="relative z-10 flex w-full items-center gap-3 px-4 py-3.5 text-left"
-      style={destructive ? { color: "var(--ios-red)" } : undefined}
+      style={{ color: destructive ? "var(--ios-red)" : "var(--color-foreground)" }}
     >
       <span className={destructive ? "" : "text-muted-foreground"}>{icon}</span>
       <span className="text-[17px]">{label}</span>
