@@ -84,14 +84,15 @@ function seed(): Records {
   const out: Records = {};
   const today = new Date();
   for (const s of SUBJECTS) {
-    out[s.id] = {};
+    const bucket: Record<string, Status> = {};
+    out[s.id] = bucket;
     for (let i = 1; i <= 56; i++) {
       const d = new Date(today);
       d.setDate(today.getDate() - i);
       if (!s.days.includes(d.getDay())) continue;
       // deterministic pseudo-random so SSR and client agree per date
       const h = (d.getDate() * 31 + d.getMonth() * 17 + s.id.length * 7) % 10;
-      out[s.id][iso(d)] = h < 8 ? "present" : "missed";
+      bucket[iso(d)] = h < 8 ? "present" : "missed";
     }
   }
   return out;
@@ -156,10 +157,10 @@ export function AttendanceProvider({ children }: { children: ReactNode }) {
 
   const setStatus = useCallback((subjectId: string, date: string, status: Status | null) => {
     setRecords((prev) => {
-      const next = { ...prev, [subjectId]: { ...(prev[subjectId] ?? {}) } };
-      if (status === null) delete next[subjectId][date];
-      else next[subjectId][date] = status;
-      return next;
+      const bucket: Record<string, Status> = { ...(prev[subjectId] ?? {}) };
+      if (status === null) delete bucket[date];
+      else bucket[date] = status;
+      return { ...prev, [subjectId]: bucket };
     });
   }, []);
 
