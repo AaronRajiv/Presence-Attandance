@@ -114,7 +114,11 @@ export function SubjectWindow({ subject, onClose }: { subject: Subject; onClose:
         </div>
       </div>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 px-5 pb-6 pt-10">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 px-5 pb-6 pt-14"
+        style={{
+          background:
+            "linear-gradient(to top, var(--color-background) 42%, color-mix(in oklab, var(--color-background) 60%, transparent) 72%, transparent)",
+        }}>
         <div className="pointer-events-auto grid grid-cols-2 gap-3">
           <GlassAction
             label="Present"
