@@ -39,15 +39,17 @@ export function ProgressRing({
           strokeLinecap="round"
           strokeDasharray={c}
           initial={{ strokeDashoffset: c }}
-          animate={{ strokeDashoffset: c - (Math.min(100, value) / 100) * c }}
-          transition={{ type: "spring", stiffness: 90, damping: 20 }}
-          style={{ filter: `drop-shadow(0 0 6px color-mix(in oklab, ${color} 55%, transparent))` }}
+          animate={{ strokeDashoffset: c - (Math.min(100, Math.max(0, value)) / 100) * c }}
+          transition={{ type: "spring", stiffness: 120, damping: 24 }}
+          style={{
+            filter: size > 60 ? `drop-shadow(0 0 4px color-mix(in oklab, ${color} 35%, transparent))` : undefined,
+          }}
         />
       </svg>
       <div className="absolute inset-0 grid place-items-center leading-none">
         {children ?? (
           <span
-            className="font-semibold tabular-nums tracking-tight"
+            className="font-semibold tabular-nums tracking-tight text-foreground"
             style={{ fontSize: size * 0.26 }}
           >
             {Math.round(value)}

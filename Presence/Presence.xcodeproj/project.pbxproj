@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C89F206855F4E27A3333911 /* Services/ICloudSyncMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7070A7A9F5564F97A8271A59 /* Services/ICloudSyncMonitor.swift */; };
+		28E115F343C74423A433BB16 /* Views/RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F611C799258B417DA787E7FB /* Views/RootTabView.swift */; };
+		2A4DB56575534D4290A3E36A /* Views/Components/AttendanceRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8FD05B0C645A893A4B68E /* Views/Components/AttendanceRingView.swift */; };
+		3C2ECB83C7C840D680A5B11D /* Views/Subject/SubjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CDC7F1EE8B4ECD9B879E61 /* Views/Subject/SubjectDetailView.swift */; };
+		411E96EE509B4DE49C37EB6F /* MultiSubjectAndSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C2D53E167421797F9F62B /* MultiSubjectAndSettingsTests.swift */; };
+		436D333A93D943DF86761C5A /* Models/Semester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDAF16C85DD4C379F45C89D /* Models/Semester.swift */; };
+		48FDC8C7B8D4492683202EBB /* Views/Calendar/DayExceptionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99848B8C8584CD09852F95F /* Views/Calendar/DayExceptionSheet.swift */; };
+		4C9BC4356B174B1DB19C8FF5 /* App/AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94975AC0B4092A88460FC /* App/AppState.swift */; };
+		549C44BA764F47A28BE99213 /* AttendanceServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EDA4DA94724C72BBF6ADCE /* AttendanceServiceTests.swift */; };
+		68C876ECFF1F4627A987A0D4 /* Views/Components/UndoBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39BF5E9728C43FABF71B818 /* Views/Components/UndoBannerView.swift */; };
+		69A6EA5B007E47D1A50734B3 /* Models/ModelSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692DC9A9B894EFFAFFFAB7F /* Models/ModelSchema.swift */; };
+		69D13EB345864257902F9F01 /* Services/AttendanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C486022984A91830C349B /* Services/AttendanceService.swift */; };
+		6A6166FA791B4162AE45EB41 /* Views/Components/LiquidGlassStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7789AA33CDA54B3BAB32ED40 /* Views/Components/LiquidGlassStyles.swift */; };
+		6BE6B74E5C0E4395850A47CB /* PresenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A04D0988C93483AB3190561 /* PresenceTests.swift */; };
+		726A00B4B4B8443893D3B176 /* Services/StatsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454F3AA7FE7F4699944527A6 /* Services/StatsEngine.swift */; };
+		771FB4C66C7541F18AAB6FE6 /* Views/Home/HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53068F5DC4FA4CE2BC00F24F /* Views/Home/HomeView.swift */; };
+		78F7754E84C64DF4872FA2E1 /* Views/Calendar/CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2430A9CBA5A4AB4A0C2318C /* Views/Calendar/CalendarView.swift */; };
+		816598A2F5184149B034EC0D /* Views/Statistics/StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962AED7E1644D39BE0EC2DC /* Views/Statistics/StatisticsView.swift */; };
+		853F2235D6C44C908632E31A /* TimetableEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A3778D874544928EC6A8F8 /* TimetableEngineTests.swift */; };
+		908271249CAA4EBA9290AA18 /* Views/Components/ContextualClassBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E8CBAB67743D09795077D /* Views/Components/ContextualClassBar.swift */; };
+		92880E3AB6AC42939381E60C /* Models/Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0016F2CB5FD4F77A6A98CD6 /* Models/Subject.swift */; };
+		9A2BFF2F387A4CC395123FB1 /* Views/Settings/SemesterFormSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5D58B5AF4EF197632641 /* Views/Settings/SemesterFormSheet.swift */; };
+		9AC28C701D3945EF87973FF3 /* Models/AttendanceRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3DA34D6E24DDCBC5A5E40 /* Models/AttendanceRecord.swift */; };
+		A6E2C563E04B4228BF39DA5B /* Models/ClassSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B86B4B641143CE8CAD706A /* Models/ClassSchedule.swift */; };
+		A9D340FF729D4681A42C9004 /* App/PresenceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA05F88BA0C04C599B907FB7 /* App/PresenceApp.swift */; };
+		B3434F73A6664AC7A863A0DC /* Models/AcademicDayException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E403BBC75473099C9B667 /* Models/AcademicDayException.swift */; };
+		BC8D659ED3B2441D807B9B08 /* ICloudAndMultiDeviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D2AB77DC044C9B06E111F /* ICloudAndMultiDeviceTests.swift */; };
+		C282A1DD5F674FABACDEE70F /* Views/Home/SubjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFBBA2E9FD14F3E9C0EC266 /* Views/Home/SubjectCardView.swift */; };
+		CA72E08A95AD43E18F0EF189 /* ProjectionEdgeCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A78922B43A14B99BDF6B25D /* ProjectionEdgeCaseTests.swift */; };
+		D4CDC10C0227464C8CD190C9 /* Views/Subject/SubjectFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA3B3FEBE948F08F1A1386 /* Views/Subject/SubjectFormView.swift */; };
+		D699A52A904B4CF09DE037DE /* AttendanceMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD429CB05F3495B9FE0C1DE /* AttendanceMathTests.swift */; };
+		E3165E0B5717475EAA896433 /* Views/Settings/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EC51463D3341B2A556C828 /* Views/Settings/SettingsView.swift */; };
+		EEA28AD210D9428FACAA41FF /* Models/ClassOccurrence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687C0A3AA1574A25B415C4C5 /* Models/ClassOccurrence.swift */; };
+		F01F775736B5405D99233790 /* Views/Subject/AddExtraClassSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFABF5F9F9A43879877A9FA /* Views/Subject/AddExtraClassSheet.swift */; };
+		F34ADAEA38644A0B99D7013D /* Views/Components/ThemeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB4377A50143B8A12B8CAC /* Views/Components/ThemeConstants.swift */; };
+		FAACF79D26B34E5FB94E54B9 /* Services/TimetableEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7AE53581B4A8E8F4AA93D /* Services/TimetableEngine.swift */; };
+		FB10279A14B9464BA841E78F /* Models/UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4B162845E4251991E327D /* Models/UserPreferences.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F32E9E8D32B4BA0A9C8C06F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC728EF812F140D598BCCD48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB8A9A09B53F48ED89954339;
+			remoteInfo = Presence;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05F3DA34D6E24DDCBC5A5E40 /* Models/AttendanceRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/AttendanceRecord.swift; sourceTree = "<group>"; };
+		0A78922B43A14B99BDF6B25D /* ProjectionEdgeCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionEdgeCaseTests.swift; sourceTree = "<group>"; };
+		0E7D2AB77DC044C9B06E111F /* ICloudAndMultiDeviceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICloudAndMultiDeviceTests.swift; sourceTree = "<group>"; };
+		2692DC9A9B894EFFAFFFAB7F /* Models/ModelSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/ModelSchema.swift; sourceTree = "<group>"; };
+		26A3778D874544928EC6A8F8 /* TimetableEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableEngineTests.swift; sourceTree = "<group>"; };
+		2A5E403BBC75473099C9B667 /* Models/AcademicDayException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/AcademicDayException.swift; sourceTree = "<group>"; };
+		2F9C2D53E167421797F9F62B /* MultiSubjectAndSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSubjectAndSettingsTests.swift; sourceTree = "<group>"; };
+		36A7AE53581B4A8E8F4AA93D /* Services/TimetableEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/TimetableEngine.swift; sourceTree = "<group>"; };
+		454F3AA7FE7F4699944527A6 /* Services/StatsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/StatsEngine.swift; sourceTree = "<group>"; };
+		53068F5DC4FA4CE2BC00F24F /* Views/Home/HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Home/HomeView.swift; sourceTree = "<group>"; };
+		5AFABF5F9F9A43879877A9FA /* Views/Subject/AddExtraClassSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Subject/AddExtraClassSheet.swift; sourceTree = "<group>"; };
+		5FA30F6298EE468D936A9604 /* Resources/Presence.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Resources/Presence.entitlements; sourceTree = "<group>"; };
+		687C0A3AA1574A25B415C4C5 /* Models/ClassOccurrence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/ClassOccurrence.swift; sourceTree = "<group>"; };
+		6FCB4377A50143B8A12B8CAC /* Views/Components/ThemeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Components/ThemeConstants.swift; sourceTree = "<group>"; };
+		7070A7A9F5564F97A8271A59 /* Services/ICloudSyncMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/ICloudSyncMonitor.swift; sourceTree = "<group>"; };
+		71EDA4DA94724C72BBF6ADCE /* AttendanceServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceServiceTests.swift; sourceTree = "<group>"; };
+		7789AA33CDA54B3BAB32ED40 /* Views/Components/LiquidGlassStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Components/LiquidGlassStyles.swift; sourceTree = "<group>"; };
+		7F5E8CBAB67743D09795077D /* Views/Components/ContextualClassBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Components/ContextualClassBar.swift; sourceTree = "<group>"; };
+		84DA3B3FEBE948F08F1A1386 /* Views/Subject/SubjectFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Subject/SubjectFormView.swift; sourceTree = "<group>"; };
+		99CDC7F1EE8B4ECD9B879E61 /* Views/Subject/SubjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Subject/SubjectDetailView.swift; sourceTree = "<group>"; };
+		9A04D0988C93483AB3190561 /* PresenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenceTests.swift; sourceTree = "<group>"; };
+		9FDAF16C85DD4C379F45C89D /* Models/Semester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/Semester.swift; sourceTree = "<group>"; };
+		A962AED7E1644D39BE0EC2DC /* Views/Statistics/StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Statistics/StatisticsView.swift; sourceTree = "<group>"; };
+		ABFBBA2E9FD14F3E9C0EC266 /* Views/Home/SubjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Home/SubjectCardView.swift; sourceTree = "<group>"; };
+		AE2F5D58B5AF4EF197632641 /* Views/Settings/SemesterFormSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Settings/SemesterFormSheet.swift; sourceTree = "<group>"; };
+		B0016F2CB5FD4F77A6A98CD6 /* Models/Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/Subject.swift; sourceTree = "<group>"; };
+		B2430A9CBA5A4AB4A0C2318C /* Views/Calendar/CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Calendar/CalendarView.swift; sourceTree = "<group>"; };
+		B4A94975AC0B4092A88460FC /* App/AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppState.swift; sourceTree = "<group>"; };
+		BA05F88BA0C04C599B907FB7 /* App/PresenceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/PresenceApp.swift; sourceTree = "<group>"; };
+		BA48CCF7CD8C49E9B8AC1BB7 /* PresenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54C486022984A91830C349B /* Services/AttendanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/AttendanceService.swift; sourceTree = "<group>"; };
+		C5B4B162845E4251991E327D /* Models/UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/UserPreferences.swift; sourceTree = "<group>"; };
+		CFD429CB05F3495B9FE0C1DE /* AttendanceMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceMathTests.swift; sourceTree = "<group>"; };
+		D99848B8C8584CD09852F95F /* Views/Calendar/DayExceptionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Calendar/DayExceptionSheet.swift; sourceTree = "<group>"; };
+		DEF8FD05B0C645A893A4B68E /* Views/Components/AttendanceRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Components/AttendanceRingView.swift; sourceTree = "<group>"; };
+		E1AC7300BF3E468BB2406603 /* Presence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Presence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8EC51463D3341B2A556C828 /* Views/Settings/SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Settings/SettingsView.swift; sourceTree = "<group>"; };
+		F1B86B4B641143CE8CAD706A /* Models/ClassSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/ClassSchedule.swift; sourceTree = "<group>"; };
+		F39BF5E9728C43FABF71B818 /* Views/Components/UndoBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Components/UndoBannerView.swift; sourceTree = "<group>"; };
+		F611C799258B417DA787E7FB /* Views/RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/RootTabView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18CA2F4EB9724878ACC3F9CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEE99462477A4D97A5872432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AE7AD8A29FA43EFAAA5C884 = {
+			isa = PBXGroup;
+			children = (
+				A80A18CCC98945A09BF283E7 /* Presence */,
+				9E03410B61D84F50A0F015E8 /* PresenceTests */,
+				63DDAA3549F44AA0903EB3AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63DDAA3549F44AA0903EB3AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1AC7300BF3E468BB2406603 /* Presence.app */,
+				BA48CCF7CD8C49E9B8AC1BB7 /* PresenceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E03410B61D84F50A0F015E8 /* PresenceTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A04D0988C93483AB3190561 /* PresenceTests.swift */,
+				CFD429CB05F3495B9FE0C1DE /* AttendanceMathTests.swift */,
+				0A78922B43A14B99BDF6B25D /* ProjectionEdgeCaseTests.swift */,
+				26A3778D874544928EC6A8F8 /* TimetableEngineTests.swift */,
+				71EDA4DA94724C72BBF6ADCE /* AttendanceServiceTests.swift */,
+				2F9C2D53E167421797F9F62B /* MultiSubjectAndSettingsTests.swift */,
+				0E7D2AB77DC044C9B06E111F /* ICloudAndMultiDeviceTests.swift */,
+			);
+			path = PresenceTests;
+			sourceTree = "<group>";
+		};
+		A80A18CCC98945A09BF283E7 /* Presence */ = {
+			isa = PBXGroup;
+			children = (
+				BA05F88BA0C04C599B907FB7 /* App/PresenceApp.swift */,
+				B4A94975AC0B4092A88460FC /* App/AppState.swift */,
+				B0016F2CB5FD4F77A6A98CD6 /* Models/Subject.swift */,
+				F1B86B4B641143CE8CAD706A /* Models/ClassSchedule.swift */,
+				687C0A3AA1574A25B415C4C5 /* Models/ClassOccurrence.swift */,
+				05F3DA34D6E24DDCBC5A5E40 /* Models/AttendanceRecord.swift */,
+				9FDAF16C85DD4C379F45C89D /* Models/Semester.swift */,
+				C5B4B162845E4251991E327D /* Models/UserPreferences.swift */,
+				2A5E403BBC75473099C9B667 /* Models/AcademicDayException.swift */,
+				2692DC9A9B894EFFAFFFAB7F /* Models/ModelSchema.swift */,
+				36A7AE53581B4A8E8F4AA93D /* Services/TimetableEngine.swift */,
+				454F3AA7FE7F4699944527A6 /* Services/StatsEngine.swift */,
+				C54C486022984A91830C349B /* Services/AttendanceService.swift */,
+				7070A7A9F5564F97A8271A59 /* Services/ICloudSyncMonitor.swift */,
+				6FCB4377A50143B8A12B8CAC /* Views/Components/ThemeConstants.swift */,
+				7789AA33CDA54B3BAB32ED40 /* Views/Components/LiquidGlassStyles.swift */,
+				DEF8FD05B0C645A893A4B68E /* Views/Components/AttendanceRingView.swift */,
+				7F5E8CBAB67743D09795077D /* Views/Components/ContextualClassBar.swift */,
+				F39BF5E9728C43FABF71B818 /* Views/Components/UndoBannerView.swift */,
+				ABFBBA2E9FD14F3E9C0EC266 /* Views/Home/SubjectCardView.swift */,
+				53068F5DC4FA4CE2BC00F24F /* Views/Home/HomeView.swift */,
+				B2430A9CBA5A4AB4A0C2318C /* Views/Calendar/CalendarView.swift */,
+				D99848B8C8584CD09852F95F /* Views/Calendar/DayExceptionSheet.swift */,
+				A962AED7E1644D39BE0EC2DC /* Views/Statistics/StatisticsView.swift */,
+				E8EC51463D3341B2A556C828 /* Views/Settings/SettingsView.swift */,
+				AE2F5D58B5AF4EF197632641 /* Views/Settings/SemesterFormSheet.swift */,
+				99CDC7F1EE8B4ECD9B879E61 /* Views/Subject/SubjectDetailView.swift */,
+				84DA3B3FEBE948F08F1A1386 /* Views/Subject/SubjectFormView.swift */,
+				5AFABF5F9F9A43879877A9FA /* Views/Subject/AddExtraClassSheet.swift */,
+				F611C799258B417DA787E7FB /* Views/RootTabView.swift */,
+				5FA30F6298EE468D936A9604 /* Resources/Presence.entitlements */,
+			);
+			path = Presence;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		852BCC88DB594F21876CD905 /* PresenceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 118089D27721427B85414F3A /* Build configuration list for PBXNativeTarget "PresenceTests" */;
+			buildPhases = (
+				C3F3E8D0A08843B38EBD467A /* Sources */,
+				AEE99462477A4D97A5872432 /* Frameworks */,
+				77EB098F753C46BFA1316F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B13BF5787EF04E2F89999CC3 /* PBXTargetDependency */,
+			);
+			name = PresenceTests;
+			productName = PresenceTests;
+			productReference = BA48CCF7CD8C49E9B8AC1BB7 /* PresenceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB8A9A09B53F48ED89954339 /* Presence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE3D5FA771B426BA4FA5396 /* Build configuration list for PBXNativeTarget "Presence" */;
+			buildPhases = (
+				481640115E8E49A5B7BFFF36 /* Sources */,
+				18CA2F4EB9724878ACC3F9CE /* Frameworks */,
+				72C22AC2E3A549C7BE1F06F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Presence;
+			productName = Presence;
+			productReference = E1AC7300BF3E468BB2406603 /* Presence.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC728EF812F140D598BCCD48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					852BCC88DB594F21876CD905 = {
+						CreatedOnToolsVersion = 26.5;
+						DevelopmentTeam = 9QT2Z8G4L3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB8A9A09B53F48ED89954339;
+					};
+					CB8A9A09B53F48ED89954339 = {
+						CreatedOnToolsVersion = 26.5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D49402CFBC584E99A9B11502 /* Build configuration list for PBXProject "Presence" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AE7AD8A29FA43EFAAA5C884;
+			productRefGroup = 63DDAA3549F44AA0903EB3AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB8A9A09B53F48ED89954339 /* Presence */,
+				852BCC88DB594F21876CD905 /* PresenceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72C22AC2E3A549C7BE1F06F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77EB098F753C46BFA1316F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		481640115E8E49A5B7BFFF36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D340FF729D4681A42C9004 /* App/PresenceApp.swift in Sources */,
+				4C9BC4356B174B1DB19C8FF5 /* App/AppState.swift in Sources */,
+				92880E3AB6AC42939381E60C /* Models/Subject.swift in Sources */,
+				A6E2C563E04B4228BF39DA5B /* Models/ClassSchedule.swift in Sources */,
+				EEA28AD210D9428FACAA41FF /* Models/ClassOccurrence.swift in Sources */,
+				9AC28C701D3945EF87973FF3 /* Models/AttendanceRecord.swift in Sources */,
+				436D333A93D943DF86761C5A /* Models/Semester.swift in Sources */,
+				FB10279A14B9464BA841E78F /* Models/UserPreferences.swift in Sources */,
+				B3434F73A6664AC7A863A0DC /* Models/AcademicDayException.swift in Sources */,
+				69A6EA5B007E47D1A50734B3 /* Models/ModelSchema.swift in Sources */,
+				FAACF79D26B34E5FB94E54B9 /* Services/TimetableEngine.swift in Sources */,
+				726A00B4B4B8443893D3B176 /* Services/StatsEngine.swift in Sources */,
+				69D13EB345864257902F9F01 /* Services/AttendanceService.swift in Sources */,
+				1C89F206855F4E27A3333911 /* Services/ICloudSyncMonitor.swift in Sources */,
+				F34ADAEA38644A0B99D7013D /* Views/Components/ThemeConstants.swift in Sources */,
+				6A6166FA791B4162AE45EB41 /* Views/Components/LiquidGlassStyles.swift in Sources */,
+				2A4DB56575534D4290A3E36A /* Views/Components/AttendanceRingView.swift in Sources */,
+				908271249CAA4EBA9290AA18 /* Views/Components/ContextualClassBar.swift in Sources */,
+				68C876ECFF1F4627A987A0D4 /* Views/Components/UndoBannerView.swift in Sources */,
+				C282A1DD5F674FABACDEE70F /* Views/Home/SubjectCardView.swift in Sources */,
+				771FB4C66C7541F18AAB6FE6 /* Views/Home/HomeView.swift in Sources */,
+				78F7754E84C64DF4872FA2E1 /* Views/Calendar/CalendarView.swift in Sources */,
+				48FDC8C7B8D4492683202EBB /* Views/Calendar/DayExceptionSheet.swift in Sources */,
+				816598A2F5184149B034EC0D /* Views/Statistics/StatisticsView.swift in Sources */,
+				E3165E0B5717475EAA896433 /* Views/Settings/SettingsView.swift in Sources */,
+				9A2BFF2F387A4CC395123FB1 /* Views/Settings/SemesterFormSheet.swift in Sources */,
+				3C2ECB83C7C840D680A5B11D /* Views/Subject/SubjectDetailView.swift in Sources */,
+				D4CDC10C0227464C8CD190C9 /* Views/Subject/SubjectFormView.swift in Sources */,
+				F01F775736B5405D99233790 /* Views/Subject/AddExtraClassSheet.swift in Sources */,
+				28E115F343C74423A433BB16 /* Views/RootTabView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F3E8D0A08843B38EBD467A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE6B74E5C0E4395850A47CB /* PresenceTests.swift in Sources */,
+				D699A52A904B4CF09DE037DE /* AttendanceMathTests.swift in Sources */,
+				CA72E08A95AD43E18F0EF189 /* ProjectionEdgeCaseTests.swift in Sources */,
+				853F2235D6C44C908632E31A /* TimetableEngineTests.swift in Sources */,
+				549C44BA764F47A28BE99213 /* AttendanceServiceTests.swift in Sources */,
+				411E96EE509B4DE49C37EB6F /* MultiSubjectAndSettingsTests.swift in Sources */,
+				BC8D659ED3B2441D807B9B08 /* ICloudAndMultiDeviceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B13BF5787EF04E2F89999CC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB8A9A09B53F48ED89954339 /* Presence */;
+			targetProxy = 8F32E9E8D32B4BA0A9C8C06F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A9BAB3DFCB441E7B756B485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_ENTITLEMENTS = Presence/Resources/Presence.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3BC9QL2NJQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Presence;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIBackgroundModes = "remote-notification";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.presence.attendance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50B3B8AD7E83401F96FAAE51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9QT2Z8G4L3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDEFINED_VARIABLES = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		612BC6B7EA964967A1339A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.presence.attendance.PresenceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Presence.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Presence";
+			};
+			name = Release;
+		};
+		7F60B74C19F049F99980D590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9QT2Z8G4L3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDEFINED_VARIABLES = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D402D0DC2DB148E6A4564028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.presence.attendance.PresenceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Presence.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Presence";
+			};
+			name = Debug;
+		};
+		F34BEF289E454D01BBFEE363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_ENTITLEMENTS = Presence/Resources/Presence.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3BC9QL2NJQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Presence;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIBackgroundModes = "remote-notification";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.presence.attendance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		118089D27721427B85414F3A /* Build configuration list for PBXNativeTarget "PresenceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D402D0DC2DB148E6A4564028 /* Debug */,
+				612BC6B7EA964967A1339A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE3D5FA771B426BA4FA5396 /* Build configuration list for PBXNativeTarget "Presence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34BEF289E454D01BBFEE363 /* Debug */,
+				1A9BAB3DFCB441E7B756B485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D49402CFBC584E99A9B11502 /* Build configuration list for PBXProject "Presence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F60B74C19F049F99980D590 /* Debug */,
+				50B3B8AD7E83401F96FAAE51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC728EF812F140D598BCCD48 /* Project object */;
+}

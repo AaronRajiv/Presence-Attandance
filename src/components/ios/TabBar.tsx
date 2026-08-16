@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { House, CalendarDays, ChartNoAxesColumn, Settings2 } from "lucide-react";
 import { haptic } from "@/lib/attendance";
 
@@ -12,40 +12,42 @@ const TABS: { key: TabKey; label: string; icon: typeof House }[] = [
 ];
 
 export function TabBar({ active, onChange }: { active: TabKey; onChange: (k: TabKey) => void }) {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <div className="pointer-events-none fixed inset-x-0 bottom-0 z-40 flex justify-center px-5 pb-5">
-      <div className="glass-strong glass-sheen pointer-events-auto flex w-full max-w-md items-center gap-1 rounded-full p-1.5">
+      <div className="glass-strong pointer-events-auto flex w-full max-w-md items-center gap-1 rounded-full p-1.5 shadow-xl border border-border/40">
         {TABS.map(({ key, label, icon: Icon }) => {
           const on = key === active;
+          const pillProps = shouldReduceMotion ? {} : { layoutId: "tab-pill" };
+
           return (
             <motion.button
               key={key}
               whileTap={{ scale: 0.92 }}
-              transition={{ type: "spring", stiffness: 500, damping: 30 }}
               onClick={() => {
                 haptic();
                 onChange(key);
               }}
-              className="relative z-10 flex flex-1 flex-col items-center gap-1 rounded-full py-2"
+              className="relative z-10 flex flex-1 flex-col items-center gap-1 rounded-full py-2 focus:outline-none select-none"
             >
               {on && (
                 <motion.span
-                  layoutId="tab-pill"
+                  {...pillProps}
                   className="absolute inset-0 rounded-full"
                   style={{
-                    background: "color-mix(in oklab, var(--accent-live) 22%, transparent)",
-                    boxShadow: "inset 0 1px 0 var(--glass-sheen)",
+                    background: "color-mix(in oklab, var(--accent-live) 18%, transparent)",
                   }}
-                  transition={{ type: "spring", stiffness: 420, damping: 34 }}
+                  transition={{ type: "spring", stiffness: 380, damping: 32 }}
                 />
               )}
               <Icon
                 className="relative z-10 size-[19px]"
-                strokeWidth={on ? 2.4 : 1.9}
+                strokeWidth={on ? 2.3 : 1.8}
                 style={{ color: on ? "var(--accent-live)" : "var(--color-muted-foreground)" }}
               />
               <span
-                className="text-caption relative z-10 font-medium"
+                className="text-caption relative z-10 font-semibold"
                 style={{ color: on ? "var(--accent-live)" : "var(--color-muted-foreground)" }}
               >
                 {label}
